@@ -1,0 +1,47 @@
+{
+ "format": "avsim-studio/1",
+ "params": {
+  "cutT0": 5.0,
+  "cutDur": 2.4,
+  "cutV": 15.0,
+  "pedT0": 9.6,
+  "pedV": 1.45,
+  "busGo": 17.5,
+  "cutDs": -4.0,
+  "tgT": 0.9,
+  "mu": 0.8,
+  "cutGap": null,
+  "cutBrake": 0.0,
+  "pedGap": null,
+  "pedLook": 0,
+  "civil": true
+ },
+ "policy": {},
+ "hazards": [
+  {
+   "x": 92.0,
+   "side": "S",
+   "v": 2.2,
+   "t0": 0.0,
+   "trig": 19.0,
+   "type": "ped"
+  }
+ ],
+ "ego": "planner",
+ "space": {
+  "h0_x": [
+   90,
+   100
+  ],
+  "h0_trig": [
+   10,
+   30
+  ],
+  "h0_v": [
+   1.0,
+   2.5
+  ]
+ },
+ "exposure": 0.02,
+ "why": "Khách vừa xuống xe buýt băng ngang ngay sau đuôi xe buýt đang đỗ (h0_x 90–100 m; buýt chiếm ~100–112 m), không đi tới vạch ở x = 122 m. exposure 0,02/chuyến ≈ 20 % chuyến đô thị đi qua một xe buýt đang đón trả khách × ~10 % số lần có người băng qua sau đuôi xe (NHTSA Traffic Safety Facts: phần lớn tử vong người đi bộ xảy ra ngoài giao lộ; TCRP Report 125 về an toàn người đi bộ quanh trạm buýt). h0_v 1,0–2,5 m/s: đi bình thường 1,2–1,5 m/s (Knoblauch et al. 1996), vội/chạy chậm tới 2,5 m/s = giới hạn khả thi của lab. h0_trig 10–30 m: người băng ngang chấp nhận khe 1,5–4 s trước xe đang chạy chậm ~7 m/s gần trạm (các nghiên cứu gap acceptance của người đi bộ); người vội chấp nhận khe ngắn hơn."
+}
